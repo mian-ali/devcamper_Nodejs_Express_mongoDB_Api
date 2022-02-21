@@ -1,7 +1,7 @@
 const fs = require('fs');
 const mongoose = require('mongoose');
 const colors = require('colors');
-const dotenv = require('dotenv');
+const dotenv  = require('dotenv');
 
 // Load env vars
 dotenv.config({ path: './config/config.env' });
@@ -29,7 +29,7 @@ const courses = JSON.parse(
   fs.readFileSync(`${__dirname}/_data/courses.json`, 'utf-8')
 );
 
-const users = JSON.parse(
+const users =  JSON.parse(
   fs.readFileSync(`${__dirname}/_data/users.json`, 'utf-8')
 );
 
